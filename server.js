@@ -8,15 +8,17 @@ const port = 3001;
 // Configurações da API da Ghost
 const GHOST_SECRET_KEY = 'c3384669-4c6f-4932-a886-1b7e17e0653f';
 const GHOST_API_BASE_URL = 'https://app.ghostspaysv1.com/api/v1';
-const UTMIFY_TOKEN = 'RGmwZKZzwX9B9D37oJV2jlbCwEhK9DqUHceQ'; // Mesmo token do principal
-const orderStore = {}; // Armazenamento temporário em memória
+
+// Configurações da Utmify
+const UTMIFY_TOKEN = 'RGmwZKZzwX9B9D37oJV2jlbCwEhK9DqUHceQ';
+const orderStore = {}; // Armazenamento temporário em memória para os pedidos
 
 // Middlewares
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/pagamentoiof2', express.static('public'));
 
-// Função para enviar/atualizar na Utmify
+// Função para enviar/atualizar na Utmify (adaptada para upsell)
 async function enviarParaUtmify(orderData) {
   const currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
   const utmifyUrl = 'https://api.utmify.com.br/api-credentials/orders';
@@ -62,7 +64,7 @@ async function enviarParaUtmify(orderData) {
     isTest: false
   };
   console.log('Enviando para Utmify - Método:', orderData.status, 'Token:', UTMIFY_TOKEN, 'Headers:', { 'x-api-token': UTMIFY_TOKEN }); // Log detalhado
-  const method = 'POST'; // Testando com POST para ambas as operações
+  const method = 'POST';
   try {
     const response = await fetch(utmifyUrl, {
       method: method,
@@ -127,6 +129,7 @@ app.post('/pagamentoiof2/api/gerar-pix', async (req, res) => {
     try {
       const dataGhost = JSON.parse(responseText);
       if (responseGhost.ok) {
+        console.log('PIX gerado com sucesso pela Ghost (JSON Response):', dataGhost);
         const currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
         orderStore[dataGhost.id] = { name, email, cpf, phone, amount, items, trackingParameters, createdAt: currentDate };
         await enviarParaUtmify({
@@ -134,7 +137,6 @@ app.post('/pagamentoiof2/api/gerar-pix', async (req, res) => {
           status: 'waiting_payment',
           ...orderStore[dataGhost.id]
         });
-        console.log('PIX gerado com sucesso pela Ghost (JSON Response):', dataGhost);
         return res.status(200).json({
           pixQrCode: dataGhost.pixQrCode,
           pixCode: dataGhost.pixCode,
